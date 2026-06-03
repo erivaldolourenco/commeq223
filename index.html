@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regulamento – 1º Festival de Artes Cristãs COMMEQ</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black:#080808;--dark:#0f0f0f;--card:#141414;
+    --gold:#C9A020;--gold-lt:#E8C040;--gold-dim:#7a5f0f;
+    --white:#ffffff;--ws:rgba(255,255,255,.85);--wd:rgba(255,255,255,.50);
+    --red:#cc2222;--blue:#1a4fd6;--purple:#7b2fc4;
+    --gr:rgba(204,34,34,.35);--gb:rgba(26,79,214,.35);
+    --gp:rgba(123,47,196,.35);--gg:rgba(201,160,32,.35);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--black);color:var(--white);font-family:'Montserrat',sans-serif;font-weight:300;line-height:1.8;overflow-x:hidden;position:relative;}
+  body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:radial-gradient(ellipse 55% 30% at 0% 20%,var(--gr) 0%,transparent 70%),
+    radial-gradient(ellipse 40% 25% at 100% 10%,rgba(201,160,32,.20) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 30% at 100% 70%,var(--gb) 0%,transparent 70%),
+    radial-gradient(ellipse 45% 25% at 0% 80%,var(--gp) 0%,transparent 70%);}
+  .page{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:56px 36px 80px;}
+  /* header */
+  header{text-align:center;padding-bottom:50px;border-bottom:1px solid rgba(201,160,32,.25);margin-bottom:54px;}
+  .handle{font-size:12px;font-weight:600;letter-spacing:3px;color:var(--wd);margin-bottom:20px;}
+  .logo-brand{font-family:'Bebas Neue',cursive;font-size:clamp(38px,7vw,64px);color:var(--white);letter-spacing:3px;line-height:1;margin-bottom:4px;text-shadow:0 0 40px rgba(201,160,32,.4);}
+  .logo-sub{font-size:11px;font-weight:600;letter-spacing:6px;color:var(--wd);margin-bottom:32px;}
+  .festival-de{font-family:'Bebas Neue',cursive;font-size:clamp(18px,3.5vw,28px);letter-spacing:12px;color:var(--ws);display:block;}
+  .artes{font-family:'Bebas Neue',cursive;font-size:clamp(56px,12vw,110px);line-height:.9;background:linear-gradient(160deg,#fff 30%,#aaa 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;letter-spacing:4px;filter:drop-shadow(0 0 30px rgba(255,255,255,.15));}
+  .crista{font-family:'Dancing Script',cursive;font-size:clamp(48px,10vw,90px);color:var(--gold);display:block;line-height:1;text-shadow:0 0 30px var(--gg),0 2px 8px rgba(0,0,0,.6);margin-top:-8px;}
+  .competitivo{font-size:clamp(11px,1.8vw,14px);font-weight:700;letter-spacing:8px;color:var(--gold);margin:18px 0 26px;display:block;}
+  .symbols{display:flex;justify-content:center;gap:28px;margin-bottom:28px;font-size:22px;}
+  .sym-cross{color:var(--red);} .sym-dove{color:var(--gold);} .sym-cup{color:var(--blue);} .sym-crown{color:var(--purple);}
+  .event-info{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:8px;}
+  .event-pill{border:1px solid rgba(201,160,32,.4);padding:12px 22px;background:rgba(201,160,32,.06);text-align:left;}
+  .pill-label{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:3px;}
+  .pill-val{font-size:13.5px;font-weight:600;color:var(--white);display:block;}
+  /* sections */
+  section{margin-bottom:42px;opacity:0;transform:translateY(16px);animation:fadeUp .55s ease forwards;}
+  @keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
+  section:nth-child(1){animation-delay:.05s} section:nth-child(2){animation-delay:.10s}
+  section:nth-child(3){animation-delay:.15s} section:nth-child(4){animation-delay:.20s}
+  section:nth-child(5){animation-delay:.25s} section:nth-child(6){animation-delay:.30s}
+  section:nth-child(7){animation-delay:.35s} section:nth-child(8){animation-delay:.40s}
+  section:nth-child(9){animation-delay:.45s} section:nth-child(10){animation-delay:.50s}
+  section:nth-child(11){animation-delay:.55s} section:nth-child(12){animation-delay:.60s}
+  section:nth-child(13){animation-delay:.65s} section:nth-child(14){animation-delay:.70s}
+  .section-header{display:flex;align-items:center;gap:14px;margin-bottom:18px;}
+  .section-num{font-family:'Bebas Neue',cursive;font-size:13px;letter-spacing:1px;color:var(--black);background:var(--gold);padding:3px 10px;flex-shrink:0;line-height:1.6;}
+  h3.section-title{font-size:clamp(11px,1.7vw,13px);font-weight:700;color:var(--white);letter-spacing:3px;text-transform:uppercase;flex:1;}
+  .section-rule{height:1px;background:linear-gradient(to right,rgba(201,160,32,.5),transparent);flex:1;}
+  .section-body{font-size:14px;color:var(--ws);line-height:1.85;padding-left:4px;}
+  .section-body p{margin-bottom:10px;} .section-body p:last-child{margin-bottom:0;}
+  /* lists */
+  ul.reg-list{list-style:none;padding:0;margin:8px 0;}
+  ul.reg-list li{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;color:var(--ws);}
+  ul.reg-list li:last-child{border-bottom:none;}
+  ul.reg-list li::before{content:'›';color:var(--gold);font-size:20px;line-height:1.3;flex-shrink:0;}
+  /* boxes */
+  .highlight-box{background:linear-gradient(135deg,rgba(201,160,32,.15) 0%,rgba(201,160,32,.05) 100%);border:1px solid rgba(201,160,32,.4);border-left:3px solid var(--gold);color:var(--gold-lt);font-size:13px;font-weight:600;letter-spacing:.5px;padding:14px 18px;margin-top:14px;}
+  .warn-box{border:1px solid rgba(204,34,34,.5);border-left:4px solid var(--red);padding:14px 18px;margin-top:14px;background:rgba(204,34,34,.07);}
+  .warn-box p{font-size:13.5px;color:#ff6666;font-weight:700;}
+  /* criteria */
+  .criteria-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:8px;margin-top:14px;}
+  .criteria-item{border:1px solid rgba(201,160,32,.25);padding:11px 14px;text-align:center;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--ws);background:rgba(255,255,255,.03);transition:background .2s,border-color .2s,color .2s;cursor:default;}
+  .criteria-item:hover{background:rgba(201,160,32,.12);border-color:var(--gold);color:var(--gold-lt);}
+  /* awards */
+  .awards{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;}
+  .award{flex:1;min-width:120px;border:1px solid rgba(255,255,255,.1);padding:18px 12px;text-align:center;background:rgba(255,255,255,.03);}
+  .award-medal{font-size:30px;margin-bottom:8px;}
+  .award-place{font-family:'Bebas Neue',cursive;font-size:18px;letter-spacing:3px;color:var(--white);}
+  .award:nth-child(1){border-color:rgba(201,160,32,.6);box-shadow:0 0 20px rgba(201,160,32,.1);}
+  .award:nth-child(2){border-color:rgba(180,180,180,.4);}
+  .award:nth-child(3){border-color:rgba(160,98,58,.5);}
+  /* footer */
+  footer{text-align:center;padding-top:44px;border-top:1px solid rgba(201,160,32,.2);margin-top:50px;}
+  .footer-cross{font-size:28px;color:var(--gold);margin-bottom:14px;display:block;text-shadow:0 0 20px var(--gg);}
+  .footer-title{font-family:'Bebas Neue',cursive;font-size:18px;letter-spacing:4px;color:var(--gold);margin-bottom:6px;}
+  footer p{font-size:13px;color:var(--wd);letter-spacing:1px;}
+  @media(max-width:600px){.page{padding:24px 16px 50px;}.criteria-grid{grid-template-columns:1fr 1fr;}.awards{flex-direction:column;}.event-info{flex-direction:column;align-items:center;}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <p class="handle">@commeq223al</p>
+    <div class="logo-brand">Commeq</div>
+    <div class="logo-sub">Regional – 223</div>
+    <span class="festival-de">Festival de</span>
+    <span class="artes">ARTES</span>
+    <span class="crista">Cristã</span>
+    <span class="competitivo">Competitivo</span>
+    <div class="symbols">
+      <span class="sym-cross">✝</span>
+      <span class="sym-dove">🕊</span>
+      <span class="sym-cup">🏆</span>
+      <span class="sym-crown">👑</span>
+    </div>
+    <div class="event-info">
+      <div class="event-pill">
+        <span class="pill-label">📍 Local</span>
+        <span class="pill-val">Av. Pratagy, Rua A 10, nº 144</span>
+        <span class="pill-val" style="color:var(--gold);font-size:12px;">Benedito Bentes – 1ª IEQ</span>
+      </div>
+      <div class="event-pill">
+        <span class="pill-label">📅 Data</span>
+        <span class="pill-val">27 de Junho</span>
+        <span class="pill-val" style="color:var(--gold);">às 18h</span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-header"><span class="section-num">01</span><h3 class="section-title">Da Realização</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <p>A <strong style="color:var(--gold)">COMMEQ – Coordenadoria dos Ministérios de Música e Artes Quadrangular da Região 223</strong> da Igreja do Evangelho Quadrangular realizará o 1º Festival de Artes Cristãs COMMEQ – Região 223, reunindo igrejas da região em um momento de comunhão, adoração, evangelização e expressão artística cristã.</p>
+      <p>O evento será <strong style="color:var(--white)">competitivo</strong> e contará com apresentações artísticas envolvendo música, dança e teatro.</p>
+      <div class="highlight-box">O festival somente será realizado mediante a confirmação mínima de 8 (oito) apresentações inscritas.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">02</span><h3 class="section-title">Do Objetivo</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <ul class="reg-list">
+        <li>Incentivar os talentos artísticos das igrejas locais;</li>
+        <li>Promover a arte cristã com excelência;</li>
+        <li>Estimular a comunhão entre as igrejas da Região 223;</li>
+        <li>Valorizar apresentações cristocêntricas e fundamentadas na Palavra de Deus;</li>
+        <li>Utilizar a arte como instrumento de evangelização, impacto espiritual e edificação da Igreja.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">03</span><h3 class="section-title">Das Modalidades Artísticas</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <p>As apresentações poderão envolver:</p>
+      <ul class="reg-list">
+        <li>Música;</li><li>Dança;</li><li>Teatro;</li>
+        <li>Ou a integração das três modalidades em uma única apresentação.</li>
+      </ul>
+      <p style="margin-top:12px;">Cada igreja poderá utilizar o formato artístico que desejar, desde que a apresentação seja cristã, bíblica, edificante, cristocêntrica e compatível com os princípios da Igreja do Evangelho Quadrangular.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">04</span><h3 class="section-title">Dos Participantes</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <ul class="reg-list">
+        <li>Poderão participar igrejas pertencentes à Região 223 da Igreja do Evangelho Quadrangular;</li>
+        <li>Não haverá limite de idade para os participantes;</li>
+        <li>Cada igreja poderá inscrever apenas <strong style="color:var(--white)">01 (uma) apresentação</strong> no festival;</li>
+        <li>A apresentação poderá conter música, dança, teatro ou a integração das três artes em um único número artístico.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">05</span><h3 class="section-title">Das Inscrições</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <ul class="reg-list">
+        <li>O valor da inscrição será de <strong style="color:var(--gold)">R$ 10,00 (dez reais) por participante</strong>;</li>
+        <li>As inscrições deverão ser realizadas dentro do prazo estabelecido pela organização;</li>
+        <li>As vagas serão limitadas e encerradas automaticamente quando todas forem preenchidas;</li>
+        <li>Cada igreja será responsável pelo pagamento referente ao total de participantes inscritos.</li>
+      </ul>
+      <p style="margin-top:12px;">A inscrição será confirmada mediante:</p>
+      <ul class="reg-list">
+        <li>Preenchimento da ficha de inscrição;</li>
+        <li>Envio das informações solicitadas;</li>
+        <li>Pagamento da taxa de inscrição.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">06</span><h3 class="section-title">Do Tempo das Apresentações</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <ul class="reg-list">
+        <li>Cada igreja terá direito a apenas <strong style="color:var(--white)">01 (um) número artístico</strong>;</li>
+        <li>O tempo máximo da apresentação será de <strong style="color:var(--gold)">10 (dez) minutos</strong>;</li>
+        <li>O grupo terá até <strong style="color:var(--gold)">5 (cinco) minutos</strong> para preparação e organização do palco;</li>
+        <li>Todas as apresentações serão oficialmente cronometradas pela organização.</li>
+      </ul>
+      <div class="warn-box"><p>⚠ O descumprimento do tempo estipulado acarretará perda de pontos na avaliação. Não será permitido exceder o tempo máximo estabelecido neste regulamento.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">07</span><h3 class="section-title">Do Envio de Material</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <p>Todas as igrejas participantes deverão enviar previamente à comissão organizadora:</p>
+      <ul class="reg-list">
+        <li>Roteiro;</li><li>Release;</li><li>Texto explicativo;</li>
+        <li>Descrição da apresentação;</li>
+        <li>Ou qualquer material necessário para a compreensão do conteúdo apresentado.</li>
+      </ul>
+      <p style="margin-top:10px;">O envio deverá informar claramente tudo o que ocorrerá durante a apresentação. A organização poderá solicitar ajustes caso identifique conteúdo incompatível com os princípios do festival.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">08</span><h3 class="section-title">Das Apresentações</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <p>As apresentações deverão glorificar a Deus, possuir conteúdo bíblico e cristocêntrico, demonstrar excelência artística e espiritual, e respeitar os princípios da Igreja do Evangelho Quadrangular.</p>
+      <p><strong style="color:var(--white)">Não serão permitidos:</strong></p>
+      <ul class="reg-list">
+        <li>Conteúdos ofensivos ou mensagens inadequadas;</li>
+        <li>Expressões desrespeitosas;</li>
+        <li>Figurinos incompatíveis com o ambiente cristão;</li>
+        <li>Apresentações contrárias aos princípios bíblicos.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">09</span><h3 class="section-title">Da Ordem das Apresentações</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <ul class="reg-list">
+        <li>A ordem das apresentações será definida por <strong style="color:var(--gold)">sorteio</strong> realizado pela comissão organizadora;</li>
+        <li>Todos os grupos deverão estar presentes no horário informado pela organização;</li>
+        <li>O atraso poderá acarretar penalidades ou desclassificação.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">10</span><h3 class="section-title">Do Corpo de Jurados</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <p>Critérios de avaliação <span style="color:var(--gold);font-weight:600">(nota de 0 a 10 para cada)</span>:</p>
+      <div class="criteria-grid">
+        <div class="criteria-item">Criatividade</div>
+        <div class="criteria-item">Excelência Artística</div>
+        <div class="criteria-item">Interpretação</div>
+        <div class="criteria-item">Organização</div>
+        <div class="criteria-item">Expressão Corporal</div>
+        <div class="criteria-item">Qualidade Musical</div>
+        <div class="criteria-item">Impacto</div>
+        <div class="criteria-item">Coerência Bíblica</div>
+        <div class="criteria-item">Originalidade</div>
+        <div class="criteria-item">Figurino</div>
+        <div class="criteria-item">Cumprimento do Tempo</div>
+      </div>
+      <div class="highlight-box" style="margin-top:16px;">As decisões da comissão julgadora serão soberanas e irrecorríveis.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">11</span><h3 class="section-title">Da Premiação</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <p>Serão premiadas as três apresentações com maior pontuação geral:</p>
+      <div class="awards">
+        <div class="award"><div class="award-medal">🥇</div><div class="award-place">1º Lugar</div></div>
+        <div class="award"><div class="award-medal">🥈</div><div class="award-place">2º Lugar</div></div>
+        <div class="award"><div class="award-medal">🥉</div><div class="award-place">3º Lugar</div></div>
+      </div>
+      <p style="margin-top:14px;font-size:13px;">A comissão poderá conceder menções honrosas ou premiações especiais. Os detalhes serão divulgados oficialmente antes do evento.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">12</span><h3 class="section-title">Das Responsabilidades dos Participantes</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <ul class="reg-list">
+        <li>Cada igreja será responsável por seus figurinos, instrumentos, equipamentos e materiais;</li>
+        <li>Os participantes deverão zelar pela conservação e organização do local do evento;</li>
+        <li>A organização não se responsabilizará por objetos perdidos, esquecidos ou danificados.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">13</span><h3 class="section-title">Dos Direitos de Imagem</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <p>Ao efetuar a inscrição, os participantes autorizam automaticamente o uso de sua imagem, voz, fotografias e gravações para fins de divulgação institucional.</p>
+      <ul class="reg-list">
+        <li>Redes sociais;</li><li>Transmissões ao vivo;</li>
+        <li>Materiais promocionais;</li>
+        <li>Registros institucionais da COMMEQ e da Igreja do Evangelho Quadrangular.</li>
+      </ul>
+      <p style="margin-top:10px;font-size:13px;color:var(--wd);">Não haverá pagamento de direitos de imagem decorrentes dessa autorização.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><span class="section-num">14</span><h3 class="section-title">Das Disposições Finais</h3><div class="section-rule"></div></div>
+    <div class="section-body">
+      <ul class="reg-list">
+        <li>Os casos omissos serão resolvidos pela comissão organizadora;</li>
+        <li>O descumprimento das regras poderá acarretar advertência, perda de pontos ou desclassificação;</li>
+        <li>Ao efetuar a inscrição, todos os participantes declaram estar de acordo com este regulamento;</li>
+        <li>A organização reserva-se o direito de realizar ajustes necessários para o bom andamento do evento.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-cross">✝</span>
+    <div class="footer-title">Comissão Organizadora</div>
+    <p>COMMEQ – Coordenadoria dos Ministérios de Música e Artes Quadrangular</p>
+    <p>Região 223 · Igreja do Evangelho Quadrangular – Maceió/AL</p>
+  </footer>
+</div>
+</body>
+</html>
