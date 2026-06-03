@@ -75,6 +75,16 @@
   .award:nth-child(1){border-color:rgba(201,160,32,.6);box-shadow:0 0 20px rgba(201,160,32,.1);}
   .award:nth-child(2){border-color:rgba(180,180,180,.4);}
   .award:nth-child(3){border-color:rgba(160,98,58,.5);}
+  /* pix box */
+  .pix-box{background:linear-gradient(135deg,rgba(26,79,214,.15) 0%,rgba(26,79,214,.05) 100%);border:1px solid rgba(26,79,214,.45);border-left:4px solid var(--blue);padding:16px 20px;margin-top:16px;}
+  .pix-title{font-size:11px;font-weight:700;letter-spacing:2px;color:#6fa3ff;text-transform:uppercase;display:block;margin-bottom:10px;}
+  .pix-row{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:var(--ws);margin-bottom:6px;}
+  .pix-row:last-child{margin-bottom:0;}
+  .pix-label{font-weight:700;color:#6fa3ff;flex-shrink:0;min-width:80px;}
+  /* btn */
+  .btn-inscricao{display:inline-block;margin-top:22px;padding:14px 36px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-lt) 100%);color:var(--black);font-family:'Bebas Neue',cursive;font-size:18px;letter-spacing:3px;text-decoration:none;border:none;cursor:pointer;transition:opacity .2s,transform .15s;text-align:center;}
+  .btn-inscricao:hover{opacity:.88;transform:translateY(-2px);}
+  .btn-wrap{margin-top:20px;text-align:center;}
   /* footer */
   footer{text-align:center;padding-top:44px;border-top:1px solid rgba(201,160,32,.2);margin-top:50px;}
   .footer-cross{font-size:28px;color:var(--gold);margin-bottom:14px;display:block;text-shadow:0 0 20px var(--gg);}
@@ -170,10 +180,22 @@
       </ul>
       <p style="margin-top:12px;">A inscrição será confirmada mediante:</p>
       <ul class="reg-list">
-        <li>Preenchimento da ficha de inscrição;</li>
+        <li>Preenchimento do formulário de inscrição (link abaixo);</li>
         <li>Envio das informações solicitadas;</li>
-        <li>Pagamento da taxa de inscrição.</li>
+        <li>Pagamento da taxa de inscrição via PIX.</li>
       </ul>
+
+      <div class="pix-box">
+        <span class="pix-title">💳 Dados para pagamento – PIX</span>
+        <div class="pix-row"><span class="pix-label">Chave PIX:</span><span>commeqal26@gmail.com</span></div>
+        <div class="pix-row"><span class="pix-label">Nome:</span><span>Bruna Jenifer de Oliveira Mendonça</span></div>
+        <div class="pix-row"><span class="pix-label">Banco:</span><span>PicPay</span></div>
+        <div class="pix-row"><span class="pix-label">Valor:</span><span><strong style="color:#6fa3ff">R$ 10,00 por participante</strong></span></div>
+      </div>
+
+      <div class="btn-wrap">
+        <a class="btn-inscricao" href="https://forms.gle/11kbUp7HZiUybfhB7" target="_blank" rel="noopener">✦ Fazer Inscrição ✦</a>
+      </div>
     </div>
   </section>
 
