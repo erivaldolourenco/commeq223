@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Regulamento – 1º Festival de Artes Cristãs COMMEQ</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
   :root {
     --black:#080808;--dark:#0f0f0f;--card:#141414;
@@ -34,10 +35,21 @@
   .competitivo{font-size:clamp(11px,1.8vw,14px);font-weight:700;letter-spacing:8px;color:var(--gold);margin:18px 0 26px;display:block;}
   .symbols{display:flex;justify-content:center;gap:28px;margin-bottom:28px;font-size:22px;}
   .sym-cross{color:var(--red);} .sym-dove{color:var(--gold);} .sym-cup{color:var(--blue);} .sym-crown{color:var(--purple);}
-  .event-info{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:8px;}
-  .event-pill{border:1px solid rgba(201,160,32,.4);padding:12px 22px;background:rgba(201,160,32,.06);text-align:left;}
+  .event-info{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:8px;}
+  .event-pill{border:1px solid rgba(201,160,32,.4);padding:12px 18px;background:rgba(201,160,32,.06);text-align:left;transition:background .2s,border-color .2s,transform .15s;display:flex;flex-direction:column;justify-content:space-between;}
   .pill-label{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:3px;}
-  .pill-val{font-size:13.5px;font-weight:600;color:var(--white);display:block;}
+  .pill-val{font-size:13px;font-weight:600;color:var(--white);display:block;}
+  .pill-hint{font-size:10px;font-weight:600;letter-spacing:.5px;margin-top:8px;display:block;opacity:.7;transition:opacity .2s;}
+  .pill-maps .pill-hint{color:#4db8ff;}
+  .pill-whats .pill-hint{color:#25D366;}
+  a:has(.pill-maps):hover .pill-maps,
+  a:has(.pill-maps):active .pill-maps{background:rgba(77,184,255,.1);border-color:rgba(77,184,255,.6);transform:translateY(-2px);}
+  a:has(.pill-maps):hover .pill-hint,
+  a:has(.pill-maps):active .pill-hint{opacity:1;}
+  a:has(.pill-whats):hover .pill-whats,
+  a:has(.pill-whats):active .pill-whats{background:rgba(37,211,102,.1);border-color:rgba(37,211,102,.6);transform:translateY(-2px);}
+  a:has(.pill-whats):hover .pill-hint,
+  a:has(.pill-whats):active .pill-hint{opacity:1;}
   /* sections */
   section{margin-bottom:42px;opacity:0;transform:translateY(16px);animation:fadeUp .55s ease forwards;}
   @keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
@@ -90,7 +102,7 @@
   .footer-cross{font-size:28px;color:var(--gold);margin-bottom:14px;display:block;text-shadow:0 0 20px var(--gg);}
   .footer-title{font-family:'Bebas Neue',cursive;font-size:18px;letter-spacing:4px;color:var(--gold);margin-bottom:6px;}
   footer p{font-size:13px;color:var(--wd);letter-spacing:1px;}
-  @media(max-width:600px){.page{padding:24px 16px 50px;}.criteria-grid{grid-template-columns:1fr 1fr;}.awards{flex-direction:column;}.event-info{flex-direction:column;align-items:center;}}
+  @media(max-width:600px){.page{padding:24px 16px 50px;}.criteria-grid{grid-template-columns:1fr 1fr;}.awards{flex-direction:column;}.event-info{flex-direction:column;align-items:center;}.event-pill{width:100%;min-height:auto;}}
 </style>
 </head>
 <body>
@@ -104,22 +116,33 @@
     <span class="crista">Cristã</span>
     <span class="competitivo">Competitivo</span>
     <div class="symbols">
-      <span class="sym-cross">✝</span>
-      <span class="sym-dove">🕊</span>
-      <span class="sym-cup">🏆</span>
-      <span class="sym-crown">👑</span>
+      <span class="sym-cross"><i class="fa-solid fa-cross"></i></span>
+      <span class="sym-dove"><i class="fa-solid fa-dove"></i></span>
+      <span class="sym-cup"><i class="fa-solid fa-wine-glass"></i></span>
+      <span class="sym-crown"><i class="fa-solid fa-crown"></i></span>
     </div>
     <div class="event-info">
-      <div class="event-pill">
+      <a href="https://maps.app.goo.gl/kUaRDezHLA4EADog9" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:contents;">
+      <div class="event-pill pill-maps" style="cursor:pointer;">
         <span class="pill-label">📍 Local</span>
         <span class="pill-val">Av. Pratagy, Rua A 10, nº 144</span>
         <span class="pill-val" style="color:var(--gold);font-size:12px;">Benedito Bentes – 1ª IEQ</span>
+        <span class="pill-hint">🗺️ Abrir no Google Maps →</span>
       </div>
+      </a>
       <div class="event-pill">
         <span class="pill-label">📅 Data</span>
         <span class="pill-val">27 de Junho</span>
         <span class="pill-val" style="color:var(--gold);">às 18h</span>
       </div>
+      <a href="https://wa.me/558288745906" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:contents;">
+      <div class="event-pill pill-whats" style="cursor:pointer;">
+        <span class="pill-label">📞 Contato</span>
+        <span class="pill-val">Rafaella Moraes</span>
+        <span class="pill-val" style="color:var(--gold);font-size:12px;">+55 82 8874-5906</span>
+        <span class="pill-hint">💬 Chamar no WhatsApp →</span>
+      </div>
+      </a>
     </div>
   </header>
 
